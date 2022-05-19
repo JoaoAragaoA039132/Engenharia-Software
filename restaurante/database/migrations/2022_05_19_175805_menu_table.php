@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('menus', function (Blueprint $table) {
             $table->id_menu();
-            $table->string('bebida')->unique();
-            $table->string('sobremesa')->unique();
-            $table->string('sopa')->unique();
-            $table->string('entrada')->unique();
-            $table->string('prato_principal')->unique();
+            $table->string('bebida');
+            $table->string('sobremesa');
+            $table->string('sopa');
+            $table->string('entrada');
+            $table->string('prato_principal');
         });
     }
 
