@@ -1,6 +1,6 @@
 clientes 
-	cartao_cidadao PK NN
-	id_clientes NN
+	cartao_cidadao NN
+	id_clientes PK NN
 	nome NN
 	telemovel NN
 

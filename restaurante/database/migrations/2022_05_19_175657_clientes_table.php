@@ -13,7 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('clients', function (Blueprint $table) {
+            $table->id_cliente();
+            $table->int('cartao_cidadao')->unique();
+            $table->string('nome');
+            $table->int('telemovel');
+        });
     }
 
     /**

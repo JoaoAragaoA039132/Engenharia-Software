@@ -13,7 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('reservations', function (Blueprint $table) {
+            $table->id_reserva();
+            $table->string('cliente');
+            $table->string('horario');
+            $table->string('mesa');
+        });
     }
 
     /**

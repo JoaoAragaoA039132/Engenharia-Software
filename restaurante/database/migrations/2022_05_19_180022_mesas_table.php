@@ -13,7 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('tables', function (Blueprint $table) {
+            $table->id_mesa();
+            $table->string('capacidade');
+            $table->string('disponibilidade');
+        });
     }
 
     /**

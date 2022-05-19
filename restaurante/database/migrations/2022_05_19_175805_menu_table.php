@@ -13,7 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('menus', function (Blueprint $table) {
+            $table->id_menu();
+            $table->string('bebida')->unique();
+            $table->string('sobremesa')->unique();
+            $table->string('sopa')->unique();
+            $table->string('entrada')->unique();
+            $table->string('prato_principal')->unique();
+        });
     }
 
     /**
