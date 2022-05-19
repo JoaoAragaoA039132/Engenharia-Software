@@ -1,0 +1,35 @@
+clientes 
+	cartao_cidadao PK NN
+	id_clientes NN
+	nome NN
+	telemovel NN
+
+funcionarios
+	id_funcionarios PK NN AI
+	nome NN
+	password NN
+
+horario
+	id_horario PK NN AI
+	disponibilidade NN
+	mesa NN
+
+menu
+	id_menu PK NN AI
+	bebida NN
+	sobremesa NN
+	sopa NN
+	entrada NN
+	prato_principal NN
+
+mesas
+	id_mesas PK NN AI
+	capacidade NN
+	disponibilidade NN
+
+reservas
+	id_reserva PK NN AI
+	id_cliente NN
+	horario NN
+	mesa NN
+	
