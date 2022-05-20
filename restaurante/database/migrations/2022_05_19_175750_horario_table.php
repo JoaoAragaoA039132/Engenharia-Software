@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('schedules', function (Blueprint $table) {
-            $table->id_horario()->unique();
+            $table->id()->unique();
             $table->string('disponibilidade');
             $table->int('mesa');
         });
