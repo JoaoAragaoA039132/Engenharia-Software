@@ -13,7 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        $table->id_mensagem()->unique();
+            $table->string('remetente');
+            $table->string('mensagem');
+            $table->timestamp('data_mensagem')->nullable();
     }
 
     /**
