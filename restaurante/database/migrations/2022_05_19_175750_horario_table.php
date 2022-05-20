@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('schedules', function (Blueprint $table) {
             $table->id_horario();
-            $table->string('disponibilidade')->unique();
+            $table->string('disponibilidade');
             $table->int('mesa');
         });
     }
