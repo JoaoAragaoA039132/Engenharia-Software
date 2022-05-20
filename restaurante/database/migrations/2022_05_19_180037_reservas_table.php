@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('cliente');
             $table->string('horario');
             $table->string('mesa');
-            $table->timestamp('data_reserva')->nullable();
+            $table->timestamp('data_reserva');
         });
     }
 

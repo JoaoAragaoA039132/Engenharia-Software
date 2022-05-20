@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('prato_principal');
             $table->string('categoria');
             $table->string('preco');
+            $table->timestamp('data_menu');
         });
     }
 

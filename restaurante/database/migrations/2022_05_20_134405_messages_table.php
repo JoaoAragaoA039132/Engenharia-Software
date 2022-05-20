@@ -16,7 +16,7 @@ return new class extends Migration
         $table->id_mensagem()->unique();
             $table->string('remetente');
             $table->string('mensagem');
-            $table->timestamp('data_mensagem')->nullable();
+            $table->timestamp('data_mensagem');
     }
 
     /**
