@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('schedules', function (Blueprint $table) {
             $table->id()->unique();
             $table->string('disponibilidade');
-            $table->int('mesa');
+            $table->integer('mesa');
         });
     }
 

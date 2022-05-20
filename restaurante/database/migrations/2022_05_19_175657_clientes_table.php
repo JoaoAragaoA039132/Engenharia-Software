@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('clients', function (Blueprint $table) {
             $table->id()->unique();
-            $table->int('cartao_cidadao');
+            $table->integer('cartao_cidadao');
             $table->string('nome');
-            $table->int('telemovel');
+            $table->integer('telemovel');
         });
     }
 
