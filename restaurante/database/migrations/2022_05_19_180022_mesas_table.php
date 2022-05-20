@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('tables', function (Blueprint $table) {
-            $table->id_mesa();
+            $table->id_mesa()->unique();
             $table->string('capacidade');
             $table->string('disponibilidade');
         });

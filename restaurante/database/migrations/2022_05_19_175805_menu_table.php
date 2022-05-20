@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('menus', function (Blueprint $table) {
-            $table->id_menu();
+            $table->id_menu()->unique();
             $table->string('bebida');
             $table->string('sobremesa');
             $table->string('sopa');
