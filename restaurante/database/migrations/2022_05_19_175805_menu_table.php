@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('sopa');
             $table->string('entrada');
             $table->string('prato_principal');
+            $table->string('categoria');
+            $table->string('preco');
         });
     }
 
