@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('messages', function (Blueprint $table) {
             $table->id()->unique();
-            $table->int('cliente');
+            $table->integer('cliente');
             $table->string('mensagem');
             $table->timestamp('data_mensagem');
         });
