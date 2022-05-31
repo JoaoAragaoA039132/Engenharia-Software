@@ -1,4 +1,0 @@
-php artisan make:migration (nome da tabela)_table
-php artisan migrate 
-php artisan migrate:fresh
-php artisan serve
