@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::group(['namespace'=>'App\Http\Controllers'],function()
+{
+
 //todos
 Route::get('/', 'HomeController@index')->name('home.index');
 
@@ -46,8 +50,6 @@ Route::get('/dish', 'DishControler@create')->name('dish.create');
 Route::post('/dish', 'DishControler@store')->name('dish.store');
 Route::get('/dish', 'DishControler@edit')->name('dish.edit');
 Route::put('/dish', 'DishControler@update')->name('dish.update');
-Route::get('/reservations', 'ReservationsControler@edit')->name('reservations.edit');
-Route::put('/reservations', 'ReservationsControler@update')->name('reservations.update');
 Route::get('/messages', 'MessagesControler@edit')->name('messages.edit');
 Route::put('/messages', 'MessagesControler@update')->name('messages.update');
 Route::get('/images', 'ImagesControler@create')->name('images.create');
@@ -55,3 +57,4 @@ Route::post('/images', 'ImagesControler@store')->name('images.store');
 Route::delete('/images', 'ImagesController@destroy')->name('images.destroy');
 
 //Route::get('/logout', 'LogoutController@logout')->name('logout.logout');
+});
