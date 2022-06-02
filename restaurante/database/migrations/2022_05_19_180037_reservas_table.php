@@ -16,9 +16,10 @@ return new class extends Migration
         Schema::create('reservations', function (Blueprint $table) {
             $table->id()->unique();
             $table->integer('cliente');
-            $table->integer('horario');
+            $table->string('horario');
             $table->integer('mesa');
-            $table->timestamp('data_reserva');
+            $table->integer('n_pessoas');
+            $table->datetime('data_reserva');
             $table->integer('estado');
         });
     }
