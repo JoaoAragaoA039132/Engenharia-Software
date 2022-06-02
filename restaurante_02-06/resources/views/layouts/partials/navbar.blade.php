@@ -25,10 +25,6 @@
         </div>
         @guest
             <div class="text-end">
-                {{--
-                    <a href="{{route('login.show')}}" class="btn btn-outline-secondary">Login</a>
-                    <a href="{{route('register.create')}}" class="btn btn-outline-secondary">Registar</a>
-                --}}
                 <a href="{{route('logout.perform')}}" class="btn btn-outline-danger">Logout</a>
             </div>
         @endguest
