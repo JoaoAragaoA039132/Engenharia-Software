@@ -21,6 +21,7 @@ return new class extends Migration
             $table->integer('n_pessoas');
             $table->datetime('data_reserva');
             $table->integer('estado');
+            $table->timestamps();
         });
     }
 
