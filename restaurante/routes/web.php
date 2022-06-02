@@ -31,17 +31,20 @@ Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
 Route::delete('/delete', 'DeleteController@destroy')->name('delete.destroy');
 Route::get('/menu', 'MenuController@show')->name('menu.show');
 Route::get('/info', 'InfoController@show')->name('info.show');
-Route::get('/reservations', 'ReservationsController@create')->name('reservations.create');
-Route::post('/reservations', 'ReservationsController@store')->name('reservations.store');
-Route::delete('/reservations', 'ReservationsController@destroy')->name('reservations.destroy');
+Route::get('/reservations-client', 'ReservationsController@createc')->name('reservations.create');
+Route::post('/reservations-client', 'ReservationsController@storec')->name('reservations.store');
+Route::delete('/reservations-client', 'ReservationsController@destroyc')->name('reservations.destroy');
+Route::get('/reservations-client', 'ReservationsController@showc')->name('reservations.show');
 Route::get('/contacts', 'ContactsController@show')->name('contacts.show');
 Route::get('/messages', 'MessagesControler@create')->name('messages.create');
 Route::post('/messages', 'MessagesControler@store')->name('messages.store');
 
 
 //funcionarios
-Route::get('/reservations', 'ReservationsController@edit')->name('reservations.edit');
-Route::put('/reservations', 'ReservationsController@update')->name('reservations.update');
+Route::get('/reservations-func', 'ReservationsController@editf')->name('reservations.edit');
+Route::put('/reservations-func', 'ReservationsController@updatef')->name('reservations.update');
+Route::delete('/reservations-func', 'ReservationsController@destroyf')->name('reservations.destroy');
+Route::get('/reservations-func', 'ReservationsController@showf')->name('reservations.show');
 Route::get('/categories', 'CategoriesControler@create')->name('categories.create');
 Route::post('/categories', 'CategoriesControler@store')->name('categories.store');
 Route::get('/categories', 'CategoriesControler@edit')->name('categories.edit');
