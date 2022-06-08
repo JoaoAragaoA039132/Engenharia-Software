@@ -1,11 +1,7 @@
-@extends('layouts.app-master-no-navbar')
+@extends('layouts.app-master')
 @section('content')
 <form method="POST" {{--action="{{route('reservations.store')}}--}}">
     <div class="bg-light p-5 rounded" style="margin:10px;">
-
-        <div  style="text-align: right">
-            <a {{--href="{{route('logout.perform')}}"--}} class="btn btn-outline-danger" href="/index">Logout</a>
-        </div>
 
         @guest
             <h1>Enviar mensagem</h1>

@@ -10,14 +10,20 @@
                     <a class="nav-link" aria-current="page" href="/dish">Menu</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/mensages-client">Entrar em Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/reservations-client">Reservas</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="/about-us">Sobre nós</a>
                 </li>
             </ul>
         </div>
         @guest
         <div class="text-end">
-            <a href="/login" class="btn btn-outline-warning">Login</a>
-            <a href="/register" class="btn btn-outline-danger">Registar</a>
+            <a href="/puser" class="btn btn-outline-warning">Logout</a>
+            <a href="/delete" class="btn btn-outline-danger">Eliminar</a>
         </div>
     @endguest
 
