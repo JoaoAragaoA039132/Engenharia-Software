@@ -1,6 +1,6 @@
 @extends('layouts.app-master')
 @section('content')
-<form method="POST" {{--action="{{route('reservations.store')}}--}}">
+<form method="POST" {{--action="{{route('reservations.store')}}"--}}>
     <div class="bg-light p-5 rounded" style="margin:10px;">
 
         @guest
