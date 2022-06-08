@@ -39,7 +39,6 @@
             <button class="btn btn-primary" type="submit">Enviar</button>
         </div>
     </div>
-    </form>
-    </div>
+</form>
 
 @endsection
