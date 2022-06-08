@@ -26,7 +26,7 @@
         </div>
         <br>
         <div style="text-align: center">
-            <h6><a class="btn btn-outline-secondary btn-lg" aria-current="page" href="/messages">Mensagens</a></h6>
+            <h6><a class="btn btn-outline-secondary btn-lg" aria-current="page" href="/messages-func">Mensagens</a></h6>
         </div>
         <br>
         <div style="text-align: center">
