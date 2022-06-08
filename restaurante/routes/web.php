@@ -36,8 +36,8 @@ Route::post('/reservations-client', 'ReservationsController@storec')->name('rese
 Route::delete('/reservations-client', 'ReservationsController@destroyc')->name('reservations.destroy');
 Route::get('/reservations-client', 'ReservationsController@showc')->name('reservations.show');
 Route::get('/contacts', 'ContactsController@show')->name('contacts.show');
-Route::get('/messages', 'MessagesControler@create')->name('messages.create');
-Route::post('/messages', 'MessagesControler@store')->name('messages.store');
+Route::get('/messages-client', 'MessagesController@createc')->name('messages.createc');
+Route::post('/messages-client', 'MessagesController@storec')->name('messages.storec');
 
 
 //funcionarios
@@ -45,18 +45,18 @@ Route::get('/reservations-func', 'ReservationsController@editf')->name('reservat
 Route::put('/reservations-func', 'ReservationsController@updatef')->name('reservations.update');
 Route::delete('/reservations-func', 'ReservationsController@destroyf')->name('reservations.destroy');
 Route::get('/reservations-func', 'ReservationsController@showf')->name('reservations.show');
-Route::get('/categories', 'CategoriesControler@create')->name('categories.create');
-Route::post('/categories', 'CategoriesControler@store')->name('categories.store');
-Route::get('/categories', 'CategoriesControler@edit')->name('categories.edit');
-Route::put('/categories', 'CategoriesControler@update')->name('categories.update');
-Route::get('/dish', 'DishControler@create')->name('dish.create');
-Route::post('/dish', 'DishControler@store')->name('dish.store');
-Route::get('/dish', 'DishControler@edit')->name('dish.edit');
-Route::put('/dish', 'DishControler@update')->name('dish.update');
-Route::get('/messages', 'MessagesControler@edit')->name('messages.edit');
-Route::put('/messages', 'MessagesControler@update')->name('messages.update');
-Route::get('/images', 'ImagesControler@create')->name('images.create');
-Route::post('/images', 'ImagesControler@store')->name('images.store');
+Route::get('/categories', 'CategoriesController@create')->name('categories.create');
+Route::post('/categories', 'CategoriesController@store')->name('categories.store');
+Route::get('/categories', 'CategoriesController@edit')->name('categories.edit');
+Route::put('/categories', 'CategoriesController@update')->name('categories.update');
+Route::get('/dish', 'DishController@create')->name('dish.create');
+Route::post('/dish', 'DishController@store')->name('dish.store');
+Route::get('/dish', 'DishController@edit')->name('dish.edit');
+Route::put('/dish', 'DishController@update')->name('dish.update');
+Route::get('/messages-func', 'MessagesController@editf')->name('messages.editf');
+Route::put('/messages-func', 'MessagesController@updatef')->name('messages.updatef');
+Route::get('/images', 'ImagesController@create')->name('images.create');
+Route::post('/images', 'ImagesController@store')->name('images.store');
 Route::delete('/images', 'ImagesController@destroy')->name('images.destroy');
 
 //Route::get('/logout', 'LogoutController@logout')->name('logout.logout');

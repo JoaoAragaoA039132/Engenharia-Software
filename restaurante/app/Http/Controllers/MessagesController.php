@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Messages;
 use Illuminate\Http\Request;
 
 class MessagesController extends Controller
@@ -10,12 +11,12 @@ class MessagesController extends Controller
         return view('messages-client.create');
     }
 
-    function storec(StoreMessagesRequest $request){
+    //function storec(StoreMessagesRequest $request){
        // return $request;
-        $messages=Messages::create($request->validated());
+        //$messages=Messages::create($request->validated());
        // $messages->create($request->validated());
-        return redirect()->route('reservations.show')->with('Reserva criada','Aguarde pela confirmação');
-    }
+        //return redirect()->route('reservations.show')->with('Reserva criada','Aguarde pela confirmação');
+    //}
 
     function editf(Reservations $reservations){
         return view('messages-func.edit',['messages'=>$messages]);
