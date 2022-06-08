@@ -18,7 +18,7 @@ Route::group(['namespace'=>'App\Http\Controllers'],function()
 {
 
 //todos
-Route::get('/', 'HomeController@index')->name('home.index');
+Route::get('/', 'PuserController@index')->name('home.index');
 
 //sem auth
 Route::get('/register', 'RegisterController@create')->name('register.create');
