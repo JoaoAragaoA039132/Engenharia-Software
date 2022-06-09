@@ -10,7 +10,7 @@
                     <a class="nav-link" aria-current="page" href="/dish">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/mensages-client">Entrar em Contacto</a>
+                    <a class="nav-link" aria-current="page" href="/messages-client">Entrar em Contacto</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="/reservations-client">Reservas</a>
