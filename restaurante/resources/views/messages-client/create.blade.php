@@ -1,6 +1,7 @@
 @extends('layouts.app-master')
 @section('content')
 <form method="POST" {{route('messages.createc')}}>
+    @csrf
     <div class="bg-light p-5 rounded" style="margin:10px;">
 
         @guest
@@ -31,6 +32,6 @@
         </div>
     </div>
 </form>
-@csrf
+
 
 @endsection

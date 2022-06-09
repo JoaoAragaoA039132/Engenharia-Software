@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Messages;
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreMessageRequest;
 
 class MessagesController extends Controller
 {
@@ -11,7 +12,7 @@ class MessagesController extends Controller
         return view('messages-client.create');
     }
 
-    function storec(StoreMessagesRequest $request){
+    function storec(StoreMessageRequest $request){
         //return $request;
         $messages=Messages::create($request->validated());
         $messages->create($request->validated());
