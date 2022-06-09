@@ -14,12 +14,14 @@
                     <label for="validationServer01">Nome:</label>
                     <input type="text" class="form-control" id="cliente" name="cliente" placeholder="Nome" value="" required>
                 </div>
-                <br>{{--
+                <br>
+                {{--
                 <div class="col-sm-8">
                     <label for="validationServer01">E-Mail:</label>
                     <input type="text" class="form-control" id="cliente" name="cliente" placeholder="E-Mail" value="" required>
                 </div>
-                <br>--}}
+                <br>
+                --}}
                 <div class="col-sm-8 form-group">
                     <label for="validationServer01">
                         Mensagem:</label>
