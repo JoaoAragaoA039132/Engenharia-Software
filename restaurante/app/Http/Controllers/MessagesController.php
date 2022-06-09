@@ -12,11 +12,11 @@ class MessagesController extends Controller
         return view('messages-client.create');
     }
 
-    function storec(Request $request){
-        return $request;
+    function storec(StoreMessageRequest $request){
+
         $messages=Messages::create($request->validated());
         $messages->create($request->validated());
-        return redirect()->route('message.show')->with('Mensagem envida','Aguarde pela confirmação');
+        return redirect()->route('puser-func.show')->with('Mensagem envida','Aguarde pela confirmação');
     }
 
     function showf(Messages $messages){

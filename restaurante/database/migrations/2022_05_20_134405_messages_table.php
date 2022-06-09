@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id()->unique();
             $table->integer('cliente');
             $table->string('mensagem');
-            $table->timestamp('data_mensagem');
+            $table->timestamps();
         });
     }
 
