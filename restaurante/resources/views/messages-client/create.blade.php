@@ -27,7 +27,7 @@
             </div>
             <br>
         <div>
-            <button class="btn btn-primary" type="submit">Enviar</button>
+            <a href="{{route('messages.createc')}}" class="btn btn-primary">Enviar</a>
         </div>
     </div>
 </form>
