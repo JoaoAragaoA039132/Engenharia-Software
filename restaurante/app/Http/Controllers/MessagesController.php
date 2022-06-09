@@ -21,6 +21,7 @@ class MessagesController extends Controller
 
     function showf(Messages $messages){
         $messages=Messages::latest()->paginate(15);
+        //return $messages;
         return view('messages-func.show', ['messages' => $messages]);
     }
 }

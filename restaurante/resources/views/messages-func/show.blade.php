@@ -5,28 +5,18 @@
     <br>
 <h1 class="h3 mb-3 fw-normal">Mensagens</h1>
 <div style="text-align: center; align-right;" >
-    <table>
+    <table class="table table-striped">
         <tr>
             <th class="col-2" style="border: 2px solid #000000"> Nome</th>
-            <th class="col-11" style="border: 2px solid #000000">Mensagem</th>
+            <th class="col-10" style="border: 2px solid #000000">Mensagem</th>
         </tr>
 
         @foreach($messages as $mes)
             <tr style=>
-                <td style="border: 1px solid #000000">{{$mes->nome}}</td>
-                <td style="border: 1px solid #000000">{{$mes->mensagens}}</td>
+                <td style="border: 1px solid #000000">{{$mes->cliente}}</td>
+                <td style="border: 1px solid #000000">{{$mes->mensagem}}</td>
             </tr>
         @endforeach
-
-        <tr>
-            <td style="border: 1px solid #000000"></td>
-            <td style="border: 1px solid #000000"></td>
-        </tr>
-        <tr>
-            <td style="border: 1px solid #000000"></td>
-            <td style="border: 1px solid #000000"> </td>
-            <td></td>
-        </tr>
     </table>
     <br>
     <div>
