@@ -1,6 +1,6 @@
 @extends('layouts.app-master')
 @section('content')
-<form method="POST" {{--action="{{route('reservations.store')}}"--}}>
+<form method="POST" {{route('messages.createc')}}>
     <div class="bg-light p-5 rounded" style="margin:10px;">
 
         @guest
@@ -27,9 +27,10 @@
             </div>
             <br>
         <div>
-            <a href="{{route('messages.createc')}}" class="btn btn-primary">Enviar</a>
+            <input type="submit" class="btn btn-primary" name="Enviar" value="Enviar">
         </div>
     </div>
 </form>
+@csrf
 
 @endsection
