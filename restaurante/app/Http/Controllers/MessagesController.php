@@ -12,8 +12,8 @@ class MessagesController extends Controller
         return view('messages-client.create');
     }
 
-    function storec(StoreMessageRequest $request){
-        //return $request;
+    function storec(Request $request){
+        return $request;
         $messages=Messages::create($request->validated());
         $messages->create($request->validated());
         return redirect()->route('message.show')->with('Mensagem envida','Aguarde pela confirmação');

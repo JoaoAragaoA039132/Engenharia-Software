@@ -1,6 +1,6 @@
 @extends('layouts.app-master')
 @section('content')
-<form method="POST" {{route('messages.createc')}}>
+<form method="POST" action="{{route('messages.storec')}}">
     @csrf
     <div class="bg-light p-5 rounded" style="margin:10px;">
 
