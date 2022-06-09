@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('horario');
             $table->integer('mesa');
             $table->integer('n_pessoas');
-            $table->datetime('data_reserva');
+            $table->string('data_reserva');
             $table->integer('estado');
             $table->timestamps();
         });
