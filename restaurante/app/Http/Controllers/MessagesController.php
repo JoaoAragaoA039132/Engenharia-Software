@@ -13,9 +13,7 @@ class MessagesController extends Controller
     }
 
     function storec(StoreMessageRequest $request){
-
         $messages=Messages::create($request->validated());
-        $messages->create($request->validated());
         return redirect()->route('puser-func.show')->with('Mensagem envida','Aguarde pela confirmação');
     }
 
