@@ -13,21 +13,16 @@
                     <label for="validationServer01">Nome:</label>
                     <input type="text" class="form-control" id="cliente" name="cliente" placeholder="Nome" value="" required>
                 </div>
-                <br>
+                <br>{{--
                 <div class="col-sm-8">
                     <label for="validationServer01">E-Mail:</label>
                     <input type="text" class="form-control" id="cliente" name="cliente" placeholder="E-Mail" value="" required>
                 </div>
-                <br>
-                <div class="col-sm-8">
-                    <label for="validationServer01">Assunto:</label>
-                    <input type="text" class="form-control" id="cliente" name="cliente" placeholder="Assunto" value="" required>
-                </div>
-                <br>
+                <br>--}}
                 <div class="col-sm-8 form-group">
                     <label for="validationServer01">
                         Mensagem:</label>
-                    <textarea class="form-control" type="textarea" id="cliente" name="cliente" placeholder="Mensagem" maxlength="6000" rows="7"></textarea>
+                    <textarea class="form-control" type="textarea" id="cliente" name="cliente" placeholder="Inserir os seus contactos no fim da mensagem" maxlength="6000" rows="7"></textarea>
                 </div>
             </div>
             <br>
