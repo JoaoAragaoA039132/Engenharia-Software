@@ -14,4 +14,9 @@ class Messages extends Model
         'mensagem',
         'data_mensagem',
     ];
+
+    public function clienteNome(){
+        return $this->belongsTo(Client::class, 'cliente', 'id');
+    }
+
 }
