@@ -13,10 +13,10 @@
                     <th class="col-10" style="border: 2px solid #000000">Mensagem: </th>
                 </tr>
 
-                @foreach($messages as $mes)
+                @foreach($menus as $men)
                     <tr style=>
-                        <td style="border: 1px solid #000000">{{$mes->nome}}</td>
-                        <td style="border: 1px solid #000000">{{$mes->mensagem}}</td>
+                        <td style="border: 1px solid #000000">{{$men->nome}}</td>
+                        <td style="border: 1px solid #000000">{{$men->mensagem}}</td>
                     </tr>
                 @endforeach
             </table>
