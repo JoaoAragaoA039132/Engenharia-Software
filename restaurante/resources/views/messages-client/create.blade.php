@@ -11,7 +11,7 @@
         <div>
             <div class="form-row">
                 <div class="col-sm-8">
-                    <label for="validationServer01">Nome:</label>
+                    <label for="validationServer01">ID de Cliente:</label>
                     <input type="text" class="form-control" id="cliente" name="cliente" placeholder="Nome" value="" required>
                 </div>
                 <br>
