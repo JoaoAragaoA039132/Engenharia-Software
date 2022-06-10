@@ -18,7 +18,7 @@
 
             @foreach($messages as $mes)
                 <tr style=>
-                    <td style="border: 1px solid #000000">{{$mes->clienteNome->cliente}}</td>
+                    <td style="border: 1px solid #000000">{{$mes->clienteNome->nome}}</td>
                     <td style="border: 1px solid #000000">{{$mes->mensagem}}</td>
                 </tr>
             @endforeach
