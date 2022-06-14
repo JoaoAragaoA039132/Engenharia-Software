@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('preco');
             $table->string('nome');
             $table->string('descricao');
+            $table->timestamps();
         });
     }
 
