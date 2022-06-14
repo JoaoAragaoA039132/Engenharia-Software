@@ -9,8 +9,10 @@
             <form style="text-align: center; align-right;" >
             <table class="table table-striped">
                 <tr>
-                    <th class="col-2" style="border: 2px solid #000000">Nome: </th>
-                    <th class="col-10" style="border: 2px solid #000000">Mensagem: </th>
+                    <th class="col-2" style="border: 2px solid #000000">Categoria: </th>
+                    <th class="col-2" style="border: 2px solid #000000">Preco: </th>
+                    <th class="col-3" style="border: 2px solid #000000">Nome: </th>
+                    <th class="col-5" style="border: 2px solid #000000">Descricao: </th>
                 </tr>
 
                 @foreach($menu as $men)
