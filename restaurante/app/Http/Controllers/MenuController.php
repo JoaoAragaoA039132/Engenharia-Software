@@ -7,10 +7,9 @@ use App\Models\Menu;
 
 class MenuController extends Controller
 {
-    function show(Menus $menus){
-        $menus=Menus::latest()->paginate(15);
+    function show(Menu $menu){
+        $menu=Menu::latest()->paginate(15);
         //return $messages;
-        //return view('menu.show', ['menu' => $menu]);
-        return true;
+        return view('menu-client.show', ['menu' => $menu]);
     }
 }
