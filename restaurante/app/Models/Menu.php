@@ -16,7 +16,7 @@ class Menu extends Model
     ];
 
     public function nomeCategoria(){
-        return $this->belongsTo(Categories::class, 'nome', 'id');
+        return $this->belongsTo(Categories::class, 'categoria', 'id');
     }
 
 }
