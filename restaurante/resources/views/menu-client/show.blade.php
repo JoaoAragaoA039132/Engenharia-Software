@@ -17,7 +17,7 @@
 
                 @foreach($menu as $men)
                     <tr style=>
-                        <td style="border: 1px solid #000000">{{$men->categoria}}</td>
+                        <td style="border: 1px solid #000000">{{$men->nomeCategoria->nome}}</td>
                         <td style="border: 1px solid #000000">{{$men->preco}}</td>
                         <td style="border: 1px solid #000000">{{$men->nome}}</td>
                         <td style="border: 1px solid #000000">{{$men->descricao}}</td>
