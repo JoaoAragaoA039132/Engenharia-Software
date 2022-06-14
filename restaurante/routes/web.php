@@ -30,7 +30,7 @@ Route::post('/login', 'LoginController@perform')->name('login.perform');
 //cliente
 Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
 Route::delete('/delete', 'DeleteController@destroy')->name('delete.destroy');
-Route::get('/menu', 'MenuController@show')->name('menu.show');
+Route::get('/menu-client', 'MenuController@show')->name('menu.show');
 Route::get('/info', 'InfoController@show')->name('info.show');
 Route::get('/reservations-client', 'ReservationsController@createc')->name('reservations.create');
 Route::post('/reservations-client', 'ReservationsController@storec')->name('reservations.store');
