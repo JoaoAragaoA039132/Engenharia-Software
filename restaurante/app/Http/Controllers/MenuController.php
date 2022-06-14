@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Menus;
 use Illuminate\Http\Request;
 
-class MenusController extends Controller
+class MenuController extends Controller
 {
     function show(Menus $menus){
         $menus=Menus::latest()->paginate(15);
