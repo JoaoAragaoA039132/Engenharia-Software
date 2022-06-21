@@ -3,7 +3,7 @@
     <div class="bg-light p-5 rounded" style="margin:10px;">
 
         <div  style="text-align: right">
-            <a {{--href="{{route('logout.perform')}}"--}} class="btn btn-outline-danger" href="/index">Logout</a>
+            <a {{--href="{{route('logout.perform')}}"--}} class="btn btn-outline-danger" href="/">Logout</a>
         </div>
 
         @guest

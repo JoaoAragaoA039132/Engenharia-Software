@@ -1,6 +1,7 @@
 @extends('layouts.app-master')
 @section('content')
-    <div class="bg-light p-5 rounded" style="margin:10px;">
+<div style="text-align: center; align-right;" >
+    <br>
 
         <form method="POST" {{route('menu.show')}}>
             @csrf
@@ -9,17 +10,17 @@
             <form style="text-align: center; align-right;" >
             <table class="table table-striped">
                 <tr>
+                    <th class="col-3" style="border: 2px solid #000000">Nome: </th>
                     <th class="col-2" style="border: 2px solid #000000">Categoria: </th>
                     <th class="col-2" style="border: 2px solid #000000">Preco: </th>
-                    <th class="col-3" style="border: 2px solid #000000">Nome: </th>
                     <th class="col-5" style="border: 2px solid #000000">Descricao: </th>
                 </tr>
 
                 @foreach($menu as $men)
                     <tr style=>
+                        <td style="border: 1px solid #000000">{{$men->nome}}</td>
                         <td style="border: 1px solid #000000">{{$men->nomeCategoria->nome}}</td>
                         <td style="border: 1px solid #000000">{{$men->preco}}</td>
-                        <td style="border: 1px solid #000000">{{$men->nome}}</td>
                         <td style="border: 1px solid #000000">{{$men->descricao}}</td>
                     </tr>
                 @endforeach

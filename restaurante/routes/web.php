@@ -18,8 +18,7 @@ Route::group(['namespace'=>'App\Http\Controllers'],function()
 {
 
 //todos
-Route::get('/', 'PuserController@index')->name('home.index');
-//Route::get('/puser-func', 'PuserController@index')->name('puser-func.show');
+Route::get('/', 'HomeController@index')->name('home.index');
 
 //sem auth
 Route::get('/register', 'RegisterController@create')->name('register.create');
@@ -32,33 +31,37 @@ Route::get('/logout', 'LogoutController@perform')->name('logout.perform');
 Route::delete('/delete', 'DeleteController@destroy')->name('delete.destroy');
 Route::get('/menu-client', 'MenuController@show')->name('menu.show');
 Route::get('/info', 'InfoController@show')->name('info.show');
-Route::get('/reservations-client', 'ReservationsController@createc')->name('reservations.create');
+Route::get('/reservations-client/create', 'ReservationsController@createc')->name('reservations.create');
 Route::post('/reservations-client', 'ReservationsController@storec')->name('reservations.store');
 Route::delete('/reservations-client', 'ReservationsController@destroyc')->name('reservations.destroy');
-Route::get('/reservations-client', 'ReservationsController@showc')->name('reservations.show');
-Route::get('/contacts', 'ContactsController@show')->name('contacts.show');
+Route::get('/reservations-client', 'ReservationsController@showc')->name('reservations-client');
+Route::view('/aboutus-client', 'aboutus-client.show');
 Route::get('/messages-client', 'MessagesController@createc')->name('messages.createc');
 Route::post('/messages-client', 'MessagesController@storec')->name('messages.storec');
 
+Route::view('/puser-client', 'puser-client.show');
+
 
 //funcionarios
-Route::get('/reservations-func', 'ReservationsController@editf')->name('reservations.edit');
-Route::put('/reservations-func', 'ReservationsController@updatef')->name('reservations.update');
-Route::delete('/reservations-func', 'ReservationsController@destroyf')->name('reservations.destroy');
+Route::get('/reservations-func/{reservations}/edit', 'ReservationsController@editf')->name('reservations-func.edit');
+Route::patch('/reservations-func/{reservations}', 'ReservationsController@updatef')->name('reservations-func.update');
 Route::get('/reservations-func', 'ReservationsController@showf')->name('reservations.show');
-Route::get('/categories', 'CategoriesController@create')->name('categories.create');
-Route::post('/categories', 'CategoriesController@store')->name('categories.store');
-Route::get('/categories', 'CategoriesController@edit')->name('categories.edit');
-Route::put('/categories', 'CategoriesController@update')->name('categories.update');
-Route::get('/dish', 'DishController@create')->name('dish.create');
-Route::post('/dish', 'DishController@store')->name('dish.store');
-Route::get('/dish', 'DishController@edit')->name('dish.edit');
-Route::put('/dish', 'DishController@update')->name('dish.update');
+Route::get('/categories', 'CategoriesControler@create')->name('categories.create');
+Route::post('/categories', 'CategoriesControler@store')->name('categories.store');
+Route::get('/categories', 'CategoriesControler@edit')->name('categories.edit');
+Route::put('/categories', 'CategoriesControler@update')->name('categories.update');
+Route::get('/dish', 'MenusController@showf')->name('dish.show');
+Route::get('/dish/create', 'MenusController@createf')->name('dish.create');
+Route::post('/dish', 'MenusController@storef')->name('dish.store');
+Route::get('/dish/{Menus}/edit', 'MenusController@editf')->name('dish.edit');
+Route::put('/dish/{Menus}/update','MenusController@updatef')->name('dish.update');
 Route::get('/messages-func', 'MessagesController@showf')->name('messages.showf');
-//Route::put('/messages-func', 'MessagesController@updatef')->name('messages.updatef');
-Route::get('/images', 'ImagesController@create')->name('images.create');
-Route::post('/images', 'ImagesController@store')->name('images.store');
+Route::get('/images', 'ImagesControler@create')->name('images.create');
+Route::post('/images', 'ImagesControler@store')->name('images.store');
 Route::delete('/images', 'ImagesController@destroy')->name('images.destroy');
+
+Route::view('/puser-func', 'puser-func.show');
+
 
 //Route::get('/logout', 'LogoutController@logout')->name('logout.logout');
 });
